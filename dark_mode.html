@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<style>
+.mystyle {
+  width: 100%;
+  height: 46vw;
+  background-color: #000; 
+  color: white;
+}
+button{
+width: 100%;
+  height: 46vw;
+    background-color: white; 
+}
+</style>
+<body>
+<button onclick="myFunction(),myFunction2()" id="myDIV" </button>
+</body>
+<script>
+    function myFunction() {
+      var x = document.getElementById("myDIV");
+      if (x.innerHTML === "click anywhere to turn on light mode") {
+        x.innerHTML = "click anywhere to turn on the dark mode";
+      } else {
+        x.innerHTML = "click anywhere to turn on light mode";
+      }
+    }
+    </script>
+    <script>
+    function myFunction2() {
+       var element = document.getElementById("myDIV");
+       element.classList.toggle("mystyle");
+    }
+    </script>
+</html>
